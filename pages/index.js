@@ -45,34 +45,34 @@ function ContactInformation() {
                 <div>
                   <div className="p-4 flex flex-col items-center">
               <p className="uppercase tracking-wide text-normal font-bold text-gray-700">{contactData.name}</p>
-                    <p className="tracking-wide text-sm text-gray-600">chief sumo</p>
+              <p className="tracking-wide text-sm text-gray-600"></p>
                     <div className="flex px-4 flex-col">
                       <p>
                         <i className="fas fa-briefcase mr-2 text-gray-700"></i>
                         <span className="text-gray-700">Works at: </span>
                         <span className="text-gray-700 font-semibold break-all">
-                          Sumo Group (sumo.com/alguma-coisa)
+                          {contactData.company.name}
                 </span>
                       </p>
                       <p className="mt-2">
                         <i className="fas fa-phone  mr-2 text-gray-700"></i>
                         <span className="text-gray-700">Phone: </span>
-                        <span className="text-gray-700 font-semibold break-all">(888) 0000-0000
+                        <span className="text-gray-700 font-semibold break-all">{contactData.phone}
                   </span>
                       </p>
                       <p className="mt-2">
                         <i className="fas fa-home  mr-2 text-gray-700"></i>
                         <span className="text-gray-700">Lives In: </span>
                         <span className="text-gray-700 font-semibold break-all">
-                          Austin, Texas
+                          {contactData.address.city}
                     </span>
                       </p>
                       <p className="mt-2">
                         <i className="fas fa-clock  mr-2 text-gray-700"></i>
                         <span className="text-gray-700">
-                          Local Time: </span>
+                          Email: </span>
                         <span className="text-gray-700 font-semibold break-all">
-                          10:13 AM MST
+                          {contactData.email}
                       </span>
                       </p>
                     </div>
